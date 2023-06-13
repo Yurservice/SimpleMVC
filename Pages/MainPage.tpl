@@ -9,14 +9,14 @@
     <main id='main'>
         <p id='saved_data'></p>
         <form  name="something_form" action='/save_input_value' method="post">
-            <input type="text" name="something" value="" maxlength="25" placeholder="Write here ..." required />
+        <textarea name="something" rows="4" cols="50" maxlength="255" placeholder="Write here ..."></textarea>
             <input type="hidden" name="csrf_token" value="<?php echo $_SESSION['csrf_token']; ?>">
-            <input type="submit" class="input_button" name="something_form" value="SAVE"/>
+            <input type="submit" id='button' name="something_form" value="SAVE"/>
         </form>
     </main>
     <footer id="footer_conteiner">
 		<div id="footer">
-			<p style="text-align:center">Copyright © 2023 Miestiechkin Oleg. Open sourse code is <a style="color:#fc6d26" href="#">here</a></p>
+			<p style="text-align:center">Copyright © 2023 Miestiechkin Oleg. Open sourse code is <a style="color:#fc6d26" href="https://github.com/Yurservice/SimpleMVC">here</a></p>
 		</div>
 	</footer>
 </body>
@@ -102,6 +102,13 @@
     form {
         width:250px;;
         margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #button {
+        cursor:pointer;
+        margin-top:15px;
     }
 
     p {

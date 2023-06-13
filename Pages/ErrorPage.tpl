@@ -11,7 +11,7 @@
     </main>
     <footer id="footer_conteiner">
 		<div id="footer">
-			<p style="text-align:center">Copyright © 2023 Miestiechkin Oleg. Open sourse code is <a style="color:#fc6d26" href="#">here</a></p>
+			<p style="text-align:center">Copyright © 2023 Miestiechkin Oleg. Open sourse code is <a style="color:#fc6d26" href="https://github.com/Yurservice/SimpleMVC">here</a></p>
 		</div>
 	</footer>
 </body>
